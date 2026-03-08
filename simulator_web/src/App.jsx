@@ -7,6 +7,7 @@ import Vision from './components/Vision';
 import Simulator from './components/Simulator';
 import About from './components/About';
 import Contact from './components/Contact';
+import Solution from './components/Solution';
 
 export default function App() {
     const [activeTab, setActiveTab] = useState('HOME');
@@ -14,6 +15,7 @@ export default function App() {
 
     const tabs = [
         { id: 'HOME', label: 'Home' },
+        { id: 'SOLUTION', label: 'Solution' },
         { id: 'VISION', label: 'Vision' },
         { id: 'SIMULATOR', label: 'Explore Simulator' },
         { id: 'ABOUT', label: 'About Us' },
@@ -23,6 +25,7 @@ export default function App() {
     const renderContent = () => {
         switch (activeTab) {
             case 'HOME': return <Home setTab={setActiveTab} />;
+            case 'SOLUTION': return <Solution />;
             case 'VISION': return <Vision />;
             case 'SIMULATOR': return <Simulator />;
             case 'ABOUT': return <About />;
@@ -57,8 +60,8 @@ export default function App() {
                                     key={tab.id}
                                     onClick={() => setActiveTab(tab.id)}
                                     className={`px-4 py-2 rounded-md text-sm font-bold transition-all ${activeTab === tab.id
-                                            ? 'bg-green-500/10 text-green-400 border border-green-500/50'
-                                            : 'text-gray-400 hover:text-green-300 hover:bg-white/5 border border-transparent'
+                                        ? 'bg-green-500/10 text-green-400 border border-green-500/50'
+                                        : 'text-gray-400 hover:text-green-300 hover:bg-white/5 border border-transparent'
                                         }`}
                                 >
                                     {tab.label}
@@ -97,8 +100,8 @@ export default function App() {
                                         setIsMenuOpen(false);
                                     }}
                                     className={`block w-full text-left px-3 py-4 rounded-md text-base font-bold ${activeTab === tab.id
-                                            ? 'bg-green-500/20 text-green-400'
-                                            : 'text-gray-300 hover:text-white hover:bg-gray-800'
+                                        ? 'bg-green-500/20 text-green-400'
+                                        : 'text-gray-300 hover:text-white hover:bg-gray-800'
                                         }`}
                                 >
                                     {tab.label}
