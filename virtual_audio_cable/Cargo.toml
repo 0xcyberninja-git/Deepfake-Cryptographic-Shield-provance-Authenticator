@@ -1,0 +1,14 @@
+[package]
+name = "deepfake_shield_virtual_cable"
+version = "0.1.0"
+edition = "2021"
+description = "A virtual audio cable driver that captures system audio loops and proxies them for ML analysis."
+authors = ["Deepfake Shield Team"]
+
+[dependencies]
+cpal = "0.15"   # Cross-platform audio library
+hyper = "0.14"  # HTTP client to send real-time chunks to our Python API
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+base64 = "0.21"
