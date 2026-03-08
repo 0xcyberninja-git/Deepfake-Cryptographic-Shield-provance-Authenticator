@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans overflow-x-hidden;
+  }
+}
+
+.matrix-bg {
+  background: 
+    linear-gradient(rgba(0, 10, 0, 0.9), rgba(0, 10, 0, 0.9)),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" opacity="0.1"><path d="M0 0h40v40H0z" fill="none"/><path d="M0 20h40M20 0v40" stroke="%230f0" stroke-width="0.5"/></svg>');
+  background-size: 20px 20px;
+}
