@@ -9,6 +9,10 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F0xcyberninja-git%2FDeepfake-Cryptographic-Shield-provance-Authenticator&root-directory=simulator_web)
+
+**🌐 Live Simulator:** [Visit the Web App Here (Coming Soon)](#)
+
 </div>
 
 ---
