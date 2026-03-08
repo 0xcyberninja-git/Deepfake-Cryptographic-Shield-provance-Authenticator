@@ -89,3 +89,4 @@ This repository currently houses the full backend intelligence. The roadmap to a
 
 ## 🤝 Contributing
 Deepfakes are an arms race. If you are an ML researcher, audio engineer, or Rust developer, we need your help building the C2PA parsers and Tauri GUI frontends to make this a ubiquitous utility. Please open an issue or submit a pull request!
+# Deepfake-Cryptographic-Shield-provance-Authenticator
